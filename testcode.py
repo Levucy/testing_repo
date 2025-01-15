@@ -4,6 +4,7 @@ COUNTRIES = ['Республика Беларусь', 'Российская Фе
              'Республика Сербия']
 LEADERS = ['Владимир Владимирович Путин', 'Александр Вучич', 'Александр Григорьевич Лукашенко',
            'Гарникович Ваагн Хачатурян', 'Кемелевич Касым-Жомарт Токаев']
+CONTINENTS = ['Европа', 'Азия', 'Африка', 'Австралия', 'Северная Америка', 'Южная Америка']
 
 def random_country():
     return random.choice(COUNTRIES)
@@ -11,8 +12,11 @@ def random_country():
 def random_leader():
     return random.choice(LEADERS)
 
+def random_continent():
+    return random.choice(CONTINENTS)
+
 def main():
-    for i in range(random.randint(2, 5)):
-        print(f'''Страна: {random_country()} | Президент: {random_leader()}''')
+    for i in range(random.randint(2, 4)):
+        print(f'''Страна: {random_country()} | Президент: {random_leader()} | Континент: {random_continent()}''')
 
 main()
