@@ -13,6 +13,7 @@ def random_leader():
 
 def main():
     for i in range(random.randint(2, 5)):
-        print(f'''Страна: {random_country()} | Президент: {random_leader()}''')
+        print(f'''* * * - Страна: {random_country()} | Президент: {random_leader()} - * * *''')
 
 main()
+print(' () ')
